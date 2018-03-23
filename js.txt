@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>iRock-виртуальный питомец</title>
+	<script type="text/javascript">
+		function greetUser(){
+			alert("Вечер в хату пацаны!!!");
+		}
+		function touchRock(){
+		var userName;
+		prompt("Ты кто, сука...", "введите ваше имя");
+		if (userName){
+			alert("Здарова ");
+			document.getElementById("irock").src="rock2.png";
+			}
+		}
+		
+		setTimeout("document.getElementById('irock').src='rock5.png';",20000);
+		function resizeRock(){
+		document.getElementById("irock").style.height=(document.body.clientHeight-100)*0.9;
+		}
+	</script>
+</head>
+	<body onload="greetUser();">
+		<div style="margin-top:100px; text-align:center">
+			<img id="irock" src="rock.png" alt="iROCK" style="cursor:pointer" onclick="touchRock();"/>
+		</div>
+	</body>
+</html>
