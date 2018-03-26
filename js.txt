@@ -8,12 +8,18 @@
 			alert("Вечер в хату пацаны!!!");
 		}
 		function touchRock(){
-		var userName;
-		prompt("Ты кто, сука...", "введите ваше имя");
+		var userName=prompt("Ты кто сука?!");
 		if (userName){
-			alert("Здарова ");
+			alert("Здарова "+userName+"!!!");
 			document.getElementById("irock").src="rock2.png";
 			}
+			else{
+				userName=prompt("Ну так чё, базарить будешь?");
+				if(userName)
+					alert("Красавчик, братан");
+				}	
+
+		document.getElementById("irock").src="rock4.png";
 		}
 		
 		setTimeout("document.getElementById('irock').src='rock5.png';",20000);
@@ -28,3 +34,4 @@
 		</div>
 	</body>
 </html>
+
